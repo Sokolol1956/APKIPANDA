@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kalkulator Wynagrodzenia</title>
+</head>
+<body>
+  <h1>Kalkulator Wynagrodzenia</h1>
+
+  <label>Imię i nazwisko pracownika: <input type="text" id="employeeName" /></label><br/>
+  <label>Miesiąc: <input type="month" id="monthInput" /></label><br/>
+  <label>Dni pracy: <input type="number" id="daysInput" /></label><br/>
+  <label>Stawka wyjściowa (PLN): <input type="number" id="baseRateInput" /></label><br/>
+  <label>Stawka w Czechach (PLN): <input type="number" id="czRateInput" /></label><br/>
+  <label>Stawka godzinowa w PL (PLN): <input type="number" id="plRateInput" /></label><br/>
+
+  <button id="calculateBtn">Oblicz</button><br/><br/><button id="exportPdfBtn">Eksportuj do PDF</button><br/><br/>
+
+  <h2>Wynik</h2>
+  <p>Pracownik: <span id="employeeResult"></span></p>
+  <p>Netto do wypłaty: <span id="nettoResult"></span></p>
+  <p>Ilość godzin: <span id="hoursResult"></span></p>
+
+  <script src="renderer.js" type="module"></script>
+</body>
+</html>
